@@ -7,170 +7,163 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>KENNETH KIMOSOP</title>
+    <script defer src="pixels.js"></script>
 </head>
 
-<body>
+<body>    
     <nav>
         <div class="logo">
             <button><a href="#">KENNETH KIMOSOP</a></button>
         </div>
         <div class="nav-links">           
-            <button><a href="#">About</a></button>                      
-            <button><a href="#">Socials</a></button>
-            <button><a href="kenneth-kimosop-71a102267">LinkedIn</a><i class="fa fa-linkedin"> <i class="ri-linkedin-box-line  "></i></i></button>    
-            <div class="buttons">          
-            <a href="https://github.com/pixelskenny/PIXELS.git"><button class="git"><i class="ri-github-fill"></i> My Github</button></a>
+            <button><a href="#">ABOUT</a></button>                      
+            <button class="main-button" onclick="toggleSocials()">SOCIALS</button>
+            <div class="social-buttons" id="social-buttons">
+                <a href="https://linkedin.com/in/kenneth-kimosop-71a102267" class="social-button"><i class="ri-linkedin-box-line"></i> LinkedIn</a>
+                <a href="https://github.com/pixelskenny" class="social-button"><i class="ri-github-fill"></i> GitHub</a>
+                <a href="https://twitter.com/username" class="social-button"><i class="ri-twitter-line"></i> Twitter</a>
+                <a href="https://instagram.com/kenkimosop" class="social-button"><i class="ri-instagram-line"></i> Instagram</a>
             </div>
         </div>
-        <button><i class="ri-github-fill"></i> <a href="#">My Projects</a></button>
+        <button><i class="ri-github-fill"></i> <a href="https://github.com/pixelskenny">My Projects</a></button>
     </nav>
-
+    <div class="image-overlay">
+        <div class="overlay"></div>
+        <div class="content">
+            <p>color overlay</p>
+        </div>
+    </div>
 
     <div class="hero">
         <div class="left-section">
             <div class="top">
-                <h2>Telecommunication and information Engineering student</h2>
+                <h2>Telecommunication and Information Engineering Student</h2>
                 <p>
-                    Design and code beautifully simple projects without overwhelming yourself with complexity. Enjoy
-                    your
-                    passion for creating with ease and love.
+                    Design and code beautifully simple projects without overwhelming yourself with complexity. Enjoy your passion for creating with ease and love.
                 </p>
-
-                
             </div>
             <div class="bottom">
                 <p>Other Socials:</p>
                 <div class="icons">
-                    <a href="#"><i class="ri-youtube-line"></i></a>
-                    <i class="ri-twitter-x-line"></i>
-                    <i class="ri-linkedin-box-line"></i>
+                    <a href="https://www.youtube.com/"><i class="ri-youtube-line"></i></a>
+                    <i class="ri-twitter-x-line"></i>                    
                     <i class="ri-instagram-line"></i>
                 </div>
             </div>
         </div>
-
-        <img src="assets/hero.jpg">
-
+        <img src="assets/hero.jpg" alt="Hero Image">
     </div>
+
     <div class="right">
         <a href="#" class="online">
             <i class="fa-solid fa-circle"></i>
         </a>
         <img src="./Images/passport photo.jpg" alt="Profile Photo">
     </div>
-    
 
     <div class="about">
-        <p>Skills</p>
-        <p>Networking</p>
-        <h2>I have Strong foundational skills in networking, programming, and IoT development. Certified in Cisco CCNA and PCAP programming</h2>
+        <div class="skills">
+            <h2>SKILLS</h2>
+            <p>I have strong foundational skills in networking, programming, and IoT development. Certified in Cisco CCNA and PCAP programming.</p>
+        </div>
         <div class="items">
             <div class="item">
                 <div class="inner">
-                    <img src="./Images/ccna-introduction-to-networks.png">
-                    <p><a href="https://www.credly.com/earner/earned/badge/719512d2-8ddd-4ff8-9afd-79e2c180c6ce">CCNA:<br> Introduction <br> to networks</a></p>
+                    <img src="./Images/ccna-introduction-to-networks.png" alt="CCNA Introduction to Networks">
+                    <p><a href="https://www.credly.com/earner/earned/badge/719512d2-8ddd-4ff8-9afd-79e2c180c6ce">CCNA: Introduction to Networks</a></p>
                 </div>
             </div>
             <div class="item">
                 <div class="inner">
-                    <img src="./Images/ccna-switching-routing-and-wireless-essentials.1.png">
-                    <p><a href="https://www.credly.com/earner/earned/badge/60123c88-d28d-4000-ba04-22a4b93291fb">CCNA: Switching, Routing, and <br>Wireless Essentials badge image.<br> Issued by isco
-                        CCNA: Switching,<br> Routing, and Wireless Essentials
-                        Cisco</a>
-                    </p>
+                    <img src="./Images/ccna-switching-routing-and-wireless-essentials.1.png" alt="CCNA Switching, Routing, and Wireless Essentials">
+                    <p><a href="https://www.credly.com/earner/earned/badge/60123c88-d28d-4000-ba04-22a4b93291fb">CCNA: Switching, Routing, and Wireless Essentials</a></p>
                 </div>
             </div>
             <div class="item">
                 <div class="inner">
-                    <img src="./Images/cybersecurity-essentials.png">
+                    <img src="./Images/cybersecurity-essentials.png" alt="Cybersecurity Essentials">
                     <p><a href="https://www.credly.com/earner/earned/badge/e1d75f50-0e7d-4412-bbb1-abe3cfcc4082">Cybersecurity Essentials</a></p>
                 </div>
             </div>
             <div class="item">
                 <div class="inner">
-                    <img src="./Images/introduction-to-iot.png">
+                    <img src="./Images/introduction-to-iot.png" alt="Introduction to IoT">
                     <p><a href="https://www.credly.com/earner/earned/badge/dfe00c7f-084d-4031-9bc2-30f76e63bace">Introduction to IoT</a></p>
                 </div>
             </div>
             <div class="item">
                 <div class="inner">
-                    <img src="./Images/network-security.png">                    
+                    <img src="./Images/network-security.png" alt="Network Security">
                     <p><a href="https://www.credly.com/earner/earned/badge/3485289a-21ac-410d-af21-bfee4035b600">Network Security</a></p>
                 </div>
             </div>
             <div class="item">
                 <div class="inner">
-                    <img src="./Images/introduction-to-cybersecurity.png">
+                    <img src="./Images/introduction-to-cybersecurity.png" alt="Introduction to Cybersecurity">
                     <p><a href="https://www.credly.com/earner/earned/badge/e1d75f50-0e7d-4412-bbb1-abe3cfcc4082">Introduction to Cybersecurity</a></p>
                 </div>
-            </div>           
-        </div>
-        </div>
+            </div>
             <div class="item">
                 <div class="inner">
-                    <img src="./Images/Postman - Postman API Fundamentals Student Expert - 2024-06-29.png" alt="">
-                    <p><a href="https://api.badgr.io/public/assertions/XnuXdA6CQi6uB0InKuoqew?identity__email=kenkimosop6%40gmail.com">Postman API fundamentals Student Expert </a>
-                    <br>How to use postman to work with APIs <br> Making GET,POST,PATCH and DELETE requests <br> API Key Authorization <br> How to use  APIs in your applications</p>
-            </div>
+                    <img src="./Images/Postman - Postman API Fundamentals Student Expert - 2024-06-29.png" alt="Postman API Fundamentals Student Expert">
+                    <p><a href="https://api.badgr.io/public/assertions/XnuXdA6CQi6uB0InKuoqew?identity__email=kenkimosop6%40gmail.com">Postman API Fundamentals Student Expert</a></p>
                 </div>
+            </div>
         </div>
+    </div>
 
     <div class="projects">
         <div class="inner">
-            <p class="debug"><i class="ri-command-line"></i> Troubleshoot & Debug</p>
+            <p class="debug"><i class="ri-command-line"></i> Troubleshooting & Debugging</p>
             <h2>Projects Showcase</h2>
-            <p class="info">Take a look at some of my notable projects, showcasing my ability to design and develop
-                effective web solutions.</p>
+            <p class="info">Have a look at some of my notable projects</p>
             <button>Explore my projects <i class="ri-arrow-right-line"></i></button>
-
+    
             <div class="items">
                 <div class="item">
                     <i class="ri-shopping-bag-4-line"></i>
-                    <a href="#">E-Commerce</a>
-                    <p>Developed full-featured e-commerce platform with secure payments.</p>
-                </div>
+                    <a href="#">Design</a>
+                    <img src="./Images/DSC_8532.jpg" alt="IoT Project">
+                    <p>Developing IoT projects</p>
+                </div>              
                 <div class="item">
                     <i class="ri-id-card-line"></i>
-                    <a href="https://pixelskenny.my.canva.site/">Portfolio Website with Canva</a>
-                    <p>Designed and built a personal portfolio website using canva to showcase my projects, interests and skills.</p>
+                    <button><a href="https://pixelskenny.my.canva.site/">Portfolio Website with Canva</a></button>
+                    <p>Designed and built a personal portfolio website using Canva to showcase my projects, interests, and skills.</p>
                 </div>
                 <div class="item">
                     <i class="ri-apps-line"></i>
-                    <a href="#">Canvas</a>
-                    <p>Created a social media application with real-time updates and user interactions.</p>
+                    <a href="#">Netflix project on Data analysis and Visualizations</a>
+                    <p>Analyzed Netflix movie data to determine trends in movie duration over time</p>
+                    <img src="#" alt="/">
                 </div>
                 <div class="item">
-                    <i class="ri-news-line"></i>
-                    <a href="#">Blog Platform</a>
-                    <p>Built a dynamic blog platform with content management features.</p>
+                    <i class="ri-apps-line"></i>
+                    <a href="#">Netflix project on Data analysis and Visualizations</a>
+                    <p>Analyzed Netflix movie data to determine trends in movie duration over time</p>
+                    <img src="./Images/netflix analysis.png" alt="/">
                 </div>
-                
+               
             </div>
         </div>
     </div>
     
-
     <div class="contact">
-        <li>
-            <ul>
-                <h2> <b></b>Teamwork and collaboration <br></h2>
-            </ul>
-        </li>
-       
+        <h2>Teamwork and Collaboration</h2>
         <div class="items">
             <div class="item">
-                <a href="#">Contact</a>
-                <p>Let's discuss your project ideas and how I can help you.</p>
-                <button onclick="openWhatsapp()">Whatsapp</button>
+                <a href="#" onclick="openWhatsapp()">WhatsApp me</a>
+                <p>You can reach out to me on these Socials</p>
+                <button onclick="openWhatsapp()">Whatsapp me</button>
+                <button><a href="#">Facebook</a></button>
             </div>
             <div class="item">
-                <p>IoT Certification program sponsored by <br><a href="https://www.waziup.org/"></a>Waziup Organization</p>
-                <a href="#">Explore My activities</a>
-                <img src="./Images/DSC_9067.jpg" alt="#">
+                <p>IoT Certification program sponsored by <a href="https://www.waziup.org/">Waziup Organization</a></p>
+                <a href="#">Explore My Activities</a>
+                <img src="./Images/DSC_9067.jpg" alt="Hackathon">
                 <p>Hackathon program participation</p>
                 <button>Waziup</button>
             </div>
-        
         </div>
     </div>
          
@@ -210,13 +203,16 @@
                     alert('Failed to send message. Please try again.');
                 });
         });
-    </script>
-    <script>
+
         function openWhatsapp() {
             window.location.href = 'https://wa.link/4czf3y';
         }
+
+        function toggleSocials() {
+            const socialButtons = document.getElementById('social-buttons');
+            socialButtons.style.display = socialButtons.style.display === 'block' ? 'none' : 'block';
+        }
     </script>
-   
 </body>
 
 </html>
