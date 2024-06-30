@@ -1,9 +1,11 @@
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: burlywood;
+   
 }
 
 nav {
@@ -18,26 +20,29 @@ nav {
 }
 
 nav .logo a {
-    color: rgb(23, 169, 62);
+    color: rgb(231, 173, 15);
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
     font-family: sans-serif;
-}
+    background-color: rgb(73, 94, 94);
+    }
 
 nav .nav-links {
     display: flex;
     align-items: center;
 }
 
-nav .nav-links button {
-    background: none;
+nav .nav-links button .hover{
+    background: rgb(97, 95, 92);
     border: none;
-    color: white;
+    color: rgb(216, 200, 22);
     margin-left: 20px;
     cursor: pointer;
     position: relative; /* Make buttons relative */
-    z-index: 5; /* Ensure buttons are above other content */
+    z-index: 5;
+    
+     /* Ensure buttons are above other content */
 }
 
 nav .nav-links .social-buttons {
@@ -50,7 +55,9 @@ nav .nav-links .social-buttons {
     color: #333;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure popup is above other content */
+    z-index: 1000; 
+    
+    /* Ensure popup is above other content */
 }
 
 nav .nav-links .social-button {
@@ -65,7 +72,7 @@ nav .nav-links .social-button {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #f4f4f4;
+    background: #949090;
 }
 
 .hero .left-section {
@@ -107,12 +114,30 @@ nav .nav-links .social-button {
 .right .online {
     display: inline-block;
     margin-bottom: 10px;
-    color: green;
+    color: rgb(80, 81, 80);
 }
 
 .right img {
-    max-width: 150px;
-    border-radius: 50%;
+    max-width: 250px;
+    
+    border-radius: 100%;
+    border: 15px solid transparent;
+    animation: borderAnimation 4s infinite; /* Add border animation */
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: rgb(55, 242, 8);
+    }
+    33% {
+        border-color: rgb(15, 233, 117);
+    }
+    66% {
+        border-color: rgb(9, 252, 9);
+    }
+    100% {
+        border-color: rgb(108, 234, 108);
+    }
 }
 
 .about {
@@ -172,7 +197,7 @@ nav .nav-links .social-button {
 .projects .inner button {
     background: #444;
     border: none;
-    color: white;
+    color: rgb(100, 97, 97);
     padding: 10px 20px;
     cursor: pointer;
     margin-bottom: 20px;
@@ -192,7 +217,10 @@ nav .nav-links .social-button {
     border-radius: 10px;
     text-align: center;
 }
+.projects .items .item a{
+    color: rgb(15, 237, 104);
 
+}
 .projects .items .item img {
     max-width: 100%;
     border-radius: 10px;
@@ -219,20 +247,21 @@ nav .nav-links .social-button {
 
 .contact .items .item {
     flex: 1 1 45%;
-    background: #f4f4f4;
+    background: #615e5e;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
 }
 
 .contact .items .item img {
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 10px;
 }
 
 .contact .items .item p {
     margin-top: 10px;
 }
+
 
 .chatbot-button {
     position: fixed;
@@ -276,7 +305,7 @@ nav .nav-links .social-button {
 }
 
 .chatbot-form button {
-    background: #07ed63;
+    background: #333;
     color: white;
     border: none;
     padding: 10px;
@@ -309,3 +338,4 @@ nav .nav-links .social-button {
     z-index: 1;
     padding: 20px;
 }
+
